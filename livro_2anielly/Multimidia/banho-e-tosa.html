@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Meu amigo cão</title>
+</head>
+
+<body>
+<a href="index.html">Home</a>
+<h1> Agendamento para banho e tosa </h1>
+<h2> Faça o seu agendamento com pelo menos 48 horas de antecedência</h2>
+
+<form method="post" id="contato" action="obrigado.html">
+<fieldset id="ident_dono">
+    <legend>identificaçao do dono do animal</legend>
+<p><label for="nome_dono">Nome:</label> <input type="text" name="nome_dono" id="nome_dono" size = "50" placeholder="Digite o nome completo do dono do animal"/></p>
+maxlength="100"
+<p><label for="endereco">Endereço:</label> <input type="text" name="endereco" id="endereco" size = "80" placeholder="Digite o endereço"/></p>
+maxlength="60"
+<p><label for="cep">CEP:</label> <input type="text" name="cep" id="cep"  size = "10"  placeholder="XXXXX-XXX"/></p>
+maxlength="9"
+<p><label for="email_dono">Email:</label> <input type="email" name="email_dono" id="email_dono" size = "80"  placeholder="Digite o endereço de email"> </p> 
+maxlength="60"
+<p><label for="tel_dono">Tel/Cel:</label> <input type="text" name="tel_dono" id="tel_dono" size = "12" placeholder="99 99999-9999"/></p>
+maxlength="13"
+<fieldset id="ident_animal"><legend>Animal</legend>
+<p><label for="nome_animal">Nome:</label> <input type="text" name="nome_animal" id="nome_animal"  size = "25"  placeholder="Digite o nome do animal"/></p>
+</fieldset>
+<p> porte do cão :
+<input type="radio"name="porte_animal" id="animal_pequeno"
+value="animal_pequeno" checked>pequeno 
+<input type ="radio" name="porte_animal" id="animal_medio"
+value="animal_medio">medio
+<input type ="radio" name="porte_animal" id="animal_grande"
+value="animal_grande">grande
+</p>
+<p>
+tipo de tosa :
+<select name="tipo_tosa"> id="tipo_tosa">
+<option value="">nenhuma</option>
+<option value ="padrao">tosa padrao</option>
+<option value="higienica">tosa higienica </option>
+<option value="tesoura">tosa na tesoura</option>
+<option value="raça">tosa da raça</option>
+<option value="bebe">tosa bebe</option>
+</select>
+</p>
+<p>observações:
+<textarea name="q_obs" id ="q_obs" placeholder="digite alguma informação sobre o animal se necessario"></textarea>
+</p>
+maxlength="40"
+<input type="submit" value="Enviar">
+
+</form>
+
+</body>
+</html>
